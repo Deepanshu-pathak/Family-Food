@@ -93,3 +93,15 @@ gsap.from(".faqs h1",{
     scrub: 2,
   },
 })
+
+// animating footer upon scrolling
+gsap.from("footer",{
+  y:200,
+  scrollTrigger: {
+    trigger: "footer",
+    scroller: "body",
+    start: "top 80%",
+    end: "top 80%",
+    scrub: 2,
+  },
+}) 
